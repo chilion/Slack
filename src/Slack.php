@@ -12,7 +12,7 @@ class Slack
 
         $dataClient = new Client();
 
-        $dT = $dataClient->post(config("slack.url"), [json_encode($data)]);
+        $dT = $dataClient->post(config("slack.url"), ["json" =>[json_encode($data)]]);
 
         if ($dT->getStatusCode() != 200) {
             return false;
