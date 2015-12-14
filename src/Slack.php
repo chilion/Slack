@@ -21,10 +21,10 @@ class Slack
     }
 
     private static function _getPayload($message) {
-        $object["payload"]["username"] = config("slack.username");
-        $object["payload"]["icon_emoji"] = config("slack.icon");
-        $object["payload"]["channel"] = config("slack.channel");
-        $object["payload"]["text"] = $message;
+        $object["username"] = config("slack.username");
+        $object["icon_emoji"] = config("slack.icon");
+        $object["channel"] = config("slack.channel");
+        $object["text"] = $message;
 
         return $object;
 
