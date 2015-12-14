@@ -11,10 +11,9 @@ class Slack
         $data = self::_getPayload($message);
 
         $dataClient = new Client();
-        
+
         $dT = $dataClient->post(config("slack.url"), ["body" => json_encode($data)]);
 
-        dd($dT);
         if ($dT->getStatusCode() != 200) {
             return false;
         }
