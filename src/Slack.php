@@ -21,9 +21,9 @@ class Slack
     }
 
     private static function getPayload($message, $channel = null, $username = null, $icon = null) {
-        $object["channel"]      = is_null(config("slack.channel")) ? $channel : config("slack.channel");
-        $object["username"]     = is_null(config("slack.username")) ? $username : config("slack.username");
-        $object["icon_emoji"]   = is_null(config("slack.icon")) ? $icon : config("slack.icon");
+        $object["channel"]      = is_null($channel) ? config("slack.channel") : $channel;
+        $object["username"]     = is_null($username) ? config("slack.username") : $username;
+        $object["icon_emoji"]   = is_null($icon) ? config("slack.icon") : $icon;
         $object["text"]         = $message;
 
         return $object;
