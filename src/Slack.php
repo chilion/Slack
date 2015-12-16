@@ -7,8 +7,8 @@ use GuzzleHttp\Exception\RequestException;
 
 class Slack
 {
-    public static function sendMessage($message) {
-        $data = self::getPayload($message);
+    public static function sendMessage($message,$username = null,$icon = null,$channel = null) {
+        $data = self::getPayload($message,$username,$icon,$channel);
 
         $dataClient = new Client();
 
@@ -20,11 +20,11 @@ class Slack
         return true;
     }
 
-    private static function getPayload($message) {
-        $object["username"] = config("slack.username");
-        $object["icon_emoji"] = config("slack.icon");
-        $object["channel"] = config("slack.channel");
-        $object["text"] = $message;
+    private static function getPayload($message,$username,$icon,$channel) {
+        $object["username"]     = is_null(config("slack.username"))?$username:config("slack.username");
+        $object["icon_emoji"]   = is_null(config("slack.icon"))?$icon:config("slack.icon");
+        $object["channel"]      = is_null(config("slack.channel"))?$channel:config("slack.channel");
+        $object["text"]         = $message;
 
         return $object;
 
