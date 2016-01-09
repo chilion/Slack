@@ -30,9 +30,9 @@ Don't forget!! Create a webhook URL http://your-domain.slack.com/services/
 Slack::sendMessage("Message!", "#channel");
 
 ## Options
-|Parameter Position   	|Description   	|Option(s)   	|Default |
-|---	|---	|---	|
-|1   	|Message to send   	| None   	| None|
-|2   	|Channel or Username to send   	|@username of #channel   	|#general|
-|3   	|Username of the Bot   	|Any name you want to give the BOT   	|CJSDevelopment Slack Bot|
-|4   	|Icon   	|The icon you want to use for your BOT as avatar   	|:ghost:|
+| Parameter Position 	| Description                 	| Option(s)                                       	| Default                  	|
+|--------------------	|-----------------------------	|-------------------------------------------------	|--------------------------	|
+| 1                  	| Message to send             	| none                                            	| none                     	|
+| 2                  	| Channel or Username to send 	| @username of #channel                           	| #general                 	|
+| 3                  	| Username of the Bot         	| Any name you want to give the BOT               	| CJSDevelopment Slack Bot 	|
+| 4                  	| Icon                        	| The icon you want to use for your BOT as avatar 	| :ghost:                  	|
