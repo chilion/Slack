@@ -2,8 +2,12 @@
 
 return [
 
-    "channel" => "your-channel",
-    "username" => "your-bot-name",
+    // Mandatory
+    "url" => "your slack given url",
+
+    // Optional
+    "channel" => "general",
+    "username" => "CJSDevelopment Slack Bot",
     "icon" => ":ghost:", //your bot icon
-    "url" => "your slack given url"
+
 ];
