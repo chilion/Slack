@@ -3,7 +3,7 @@
     "description": "A Laravel package to post Slack Message",
     "type": "library",
     "license": "MIT",
-    "version" : "0.0.1",
+    "version" : "1.0.0",
     "homepage" : "http://chilion.nl/published-slack-for-laravel-package/",
     "authors": [
         {
@@ -11,7 +11,7 @@
             "email": "chilionsnoek@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
 
     "autoload": {
       "psr-4": {
