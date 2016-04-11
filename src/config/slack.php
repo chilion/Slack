@@ -3,11 +3,11 @@
 return [
 
     // Mandatory
-    "url" => "your slack given url",
+    'url' => 'your slack given url',
 
     // Optional
-    "channel" => "general",
-    "username" => "CJSDevelopment Slack Bot",
-    "icon" => ":ghost:", //your bot icon
+    'channel'  => 'general',
+    'username' => 'CJSDevelopment Slack Bot',
+    'icon'     => ':ghost:', //your bot icon
 
 ];
