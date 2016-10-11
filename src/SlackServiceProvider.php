@@ -4,6 +4,10 @@ namespace CJSDevelopment;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class SlackServiceProvider
+ * @package CJSDevelopment
+ */
 class SlackServiceProvider extends ServiceProvider
 {
     /**
